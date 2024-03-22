@@ -173,12 +173,70 @@ export default async function decorate(block) {
     toggleMenu(nav, navSections, isDesktop.matches)
   );
 
-const navWrapper = document.createElement("div");
-navWrapper.className = "nav-wrapper";
-block.append(navWrapper);
-const newDiv = document.createElement("div");
-newDiv.className = "first-nav";
-navWrapper.append(newDiv);
-navWrapper.append(nav);
+  const navWrapper = document.createElement("div");
+  if (isDesktop.matches) {
+    navWrapper.innerHTML = `
+      <div class="component Header" data-eshop="True">
+        <div class="component-content">
+          <article class="top-header app-js__top-header">
+            <div class="top-header__wrapper">
+              <div class="top-header__language-section">
+                <div class="top-header__location">
+                  <img
+                    src="https://www.analog.com/en/_/media/project/analogweb/analogweb/global/location.png?as=0&amp;dmc=0&amp;iar=0&amp;thn=0&amp;udi=0&amp;rev=a637d4413f51432aa5873ae674d6422f&amp;la=en&amp;h=16&amp;w=13&amp;hash=6376F722B24871F4022084B0D4BC30EA"
+                    id="Icon-image"
+                    alt="location"
+                  />
+                </div>
+                <div
+                  class="top-header__language text-underline link-extraSmall"
+                  data-toggle="modal"
+                  data-target="#languageSelectorModal"
+                  tabindex="0"
+                  role="button"
+                  aria-label="English Click to open a modal and to change language"
+                >
+                  English
+                </div>
+                <div class="top-header__currency">USD</div>
+              </div>
+              <div class="top-header__myanalog-section">
+                <div class="top-header__myanalog-icon">
+                  <img
+                    src="https://www.analog.com/en/_/media/project/analogweb/analogweb/global/myanalog.svg?as=0&amp;dmc=0&amp;iar=0&amp;thn=0&amp;udi=0&amp;rev=c0f5b6da33314165b1378171a85761c9&amp;la=en&amp;h=16px&amp;w=82px&amp;hash=D35DE305084994388CBBCDFF0DED59E7"
+                    height="16px"
+                    alt="myanalog"
+                    width="82px"
+                  />
+                </div>
+                <div class="top-header__login-signup link-extraSmall">
+                  <article class="login-button app-js__login-button">
+                    <a
+                      aria-label="Login"
+                      role="link"
+                      class="login-button__auth-login hide-onlogin"
+                      tabindex="0"
+                      >Log In</a
+                    ><span class="hide-onlogin"> | </span
+                    ><a class="login-button__auth-login hide-onlogin" tabindex="0"
+                      >Sign Up</a
+                    ><a
+                      class="login-button__auth-login"
+                      style="display: none"
+                      tabindex="0"
+                      >Your Account</a
+                    >
+                  </article>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
 
+    `;
+  }
+  navWrapper.className = "nav-wrapper";
+  navWrapper.append(nav);
+  block.append(navWrapper);
 }

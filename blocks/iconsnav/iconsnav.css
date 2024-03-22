@@ -1,0 +1,13 @@
+.nav-tools {
+  height: 100%;
+  padding-right: 16px;
+}
+
+.iconsnav {
+  display: flex;
+  gap: 24px;
+}
+
+.icon-button {
+  display: flex;
+}
