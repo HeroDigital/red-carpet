@@ -245,7 +245,7 @@ header nav .nav-sections .default-content-wrapper > ul > li[aria-expanded="true"
     gap: 1em;
     margin: 0 2em 0 0;
     font-size: var(--body-font-size-xs);
-    justify-content: end;
+    justify-content: center;
   }
 
   header nav .nav-sections .default-content-wrapper > ul > li {
@@ -395,11 +395,12 @@ header nav .nav-sections .default-content-wrapper > ul > li > a {
     color: #212836;
     width: 100%;
     height: 100%;
+    text-transform: capitalize;
   }
 
   header nav .default-content-wrapper ul li .section-heading {
     color: #212836;
-    font-family: inter, sans-serif;
+    font-family: Inter, sans-serif;
     font-size: 14px;
     font-weight: 700;
   }
@@ -407,7 +408,7 @@ header nav .nav-sections .default-content-wrapper > ul > li > a {
   .section-heading,
   header nav .nav-sections .default-content-wrapper > ul > li > a {
     color: #212836;
-    font-family: inter, sans-serif;
+    font-family: Inter, sans-serif;
     font-size: 14px;
     font-weight: 700;
   }
@@ -431,7 +432,7 @@ header nav .nav-sections .default-content-wrapper > ul > li > a {
   header .top-header {
     background: #003965;
     color: #fff;
-    font-family: inter, sans-serif;
+    font-family: Inter, sans-serif;
     font-size: 12px;
     line-height: 16px;
     width: 100%;
