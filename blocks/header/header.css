@@ -1,7 +1,7 @@
 /* header and nav layout */
 header .nav-wrapper {
-  background-color: var(--background-color--header);
-  color: white;
+  background: white;
+  color: #212836;
   width: 100%;
   z-index: 2;
   position: fixed;
@@ -39,7 +39,7 @@ header nav[aria-expanded="true"] {
   header nav[aria-expanded="true"] {
     min-height: 0;
     overflow: visible;
-    color: black;
+    color: #212836;
     background: white;
   }
 }
@@ -182,7 +182,7 @@ header nav .nav-sections ul > li > ul {
 }
 
 header nav .nav-sections ul > li > ul > li {
-  color: black;
+  color: #212836;
   font-weight: 500;
 }
 
@@ -301,7 +301,7 @@ header nav .nav-sections .default-content-wrapper > ul > li > a {
   display: block;
   padding: 20px 23px;
   background-color: white;
-  color: black;
+  color: #212836;
   font-weight: 400;
   border-bottom: 1px solid #0049ab;
   cursor: pointer;
