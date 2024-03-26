@@ -1,14 +1,15 @@
 main .hero-container > div {
   max-width: unset;
+  background: #0067b9;
 }
-  
+
 main .hero-container {
   padding: 0;
 }
 
 .hero {
   position: relative;
-  padding: 32px;
+  padding: 80px 40px;
   min-height: 300px;
 }
 
@@ -17,7 +18,49 @@ main .hero-container {
   margin-left: auto;
   margin-right: auto;
   color: white;
+  font-family: Barlow;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 4rem;
+  margin: 0 0 32px 0;
 }
+
+.hero p {
+  font-family: Inter;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: .1px;
+  line-height: 1.625rem;
+  color: white;
+  margin: 0;
+}
+
+.hero p a.button {
+  width: 100%;
+  align-items: center;
+  background: #fff;
+  border-radius: 4px;
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  padding: 8px;
+  text-decoration: none;
+  font-family: Inter;
+  font-size: .875rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.25rem;
+  color: #212836;
+  margin: 32px 0 0 0;
+}
+
+.hero p a.button::after {
+    content: url('/icons/open-link.svg');
+    margin: 5px 0 0 5px;
+}
+
 
 .hero picture {
   position: absolute;
@@ -31,4 +74,47 @@ main .hero-container {
   object-fit: cover;
   width: 100%;
   height: 100%;
+}
+@media (width >= 420px) {
+  .hero h1 {
+    font-size: 3.5rem;
+  }
+}
+
+@media (width >= 1024px) {
+  main .hero-container > div {
+    max-width: unset;
+    background: unset;
+  }
+
+  main .hero-container .hero {
+    position: relative;
+    padding: 88px 0;
+    height: 374px;
+    margin-top: 50px;
+  }
+
+  main .hero-container .hero > div {
+    margin: auto;
+    max-width: 1360px;
+    padding-left: 88px;
+  }
+
+  main .hero-container .hero > div > div {
+    width: 50%;
+  }
+
+  main .hero-container  .hero p a.button {
+    width: 50%;
+  }
+}
+
+@media (width >= 1400px) {
+  main .hero-container .hero > div {
+    padding-left: 160px;
+  }
+
+  main .hero-container .hero > div > div {
+    width: 44%;
+  }
 }

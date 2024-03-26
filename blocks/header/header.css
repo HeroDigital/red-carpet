@@ -41,6 +41,11 @@ header nav[aria-expanded="true"] {
     overflow: visible;
     color: #212836;
     background: white;
+    margin: auto;
+    max-width: 1360px;
+    width: 100%;
+    padding-left: 56px;
+    padding-right: 56px;
   }
 }
 
@@ -194,6 +199,10 @@ header nav .nav-sections ul > li > ul > li > ul{
   header nav .nav-sections ul > li > ul > li > ul{
     display: block;
   }
+
+  header .nav-brand {
+    padding-left: 32px;
+  }
 }
 
 header nav .nav-sections .default-content-wrapper > ul > li > ul {
@@ -246,6 +255,8 @@ header nav .nav-sections .default-content-wrapper > ul > li[aria-expanded="true"
     margin: 0 2em 0 0;
     font-size: var(--body-font-size-xs);
     justify-content: center;
+    align-items: center;
+    height: 80px;
   }
 
   header nav .nav-sections .default-content-wrapper > ul > li {
@@ -403,6 +414,7 @@ header nav .nav-sections .default-content-wrapper > ul > li > a {
     font-family: Inter, sans-serif;
     font-size: 14px;
     font-weight: 700;
+    padding-left: 8px;
   }
 
   .section-heading,

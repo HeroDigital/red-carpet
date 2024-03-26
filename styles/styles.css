@@ -151,6 +151,7 @@ a.button:any-link, button {
   overflow: hidden;
   text-overflow: ellipsis;
   border-radius: 30px;
+  width: 100%;
 }
 
 a.button:hover, a.button:focus, button:hover, button:focus  {
