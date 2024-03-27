@@ -31,3 +31,84 @@
     order: unset;
   }
 }
+
+main .section.highlight {
+  padding: 96px 16px;
+}
+
+.highlight .columns h2 {
+  color: #fff;
+  font-family: Barlow;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 2.5rem;
+  margin: 40px 0 32px 0;
+}
+
+.highlight .columns p {
+  color: #fff;
+  font-family: Inter;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: .1px;
+  line-height: 1.625rem;
+  margin: 0 0 32px 0;
+}
+
+.highlight .columns p.button-container {
+  margin: 0;
+}
+
+.highlight .columns p.button-container a {
+  margin: 0;
+  display: block;
+  padding: 8px;
+  text-align: center;
+  width: 100%;
+  background-color: transparent;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  font-family: Inter;
+  font-size: .875rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.25rem;
+}
+
+@media (width >= 992px) {
+  .highlight .columns > div {
+    gap: 0;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .highlight .columns > div > div {
+    flex: unset;
+    order: unset;
+    width: 40%;
+  }
+
+  .highlight .columns > div > .columns-img-col {
+    flex: unset;
+    order: unset;
+    width: 50%;
+  }
+
+  .highlight .columns p.button-container {
+    width: fit-content;
+  }
+
+  main .section.highlight {
+      padding: 0;
+  }
+
+  .highlight .columns {
+    padding: 80px 56px;
+  }
+
+  .highlight .columns h2 {
+    margin: 0 0 32px 0;
+  }
+}

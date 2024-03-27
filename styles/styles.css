@@ -208,7 +208,7 @@ main .section {
 /* section metadata */
 main .section.light,
 main .section.highlight {
-  background-color: var(--light-color);
+  background: var(--Gradient-Bright-B, linear-gradient(267deg, #8637ba -7.94%, #0067b9 99.48%));
 }
 
 .visually-hidden {

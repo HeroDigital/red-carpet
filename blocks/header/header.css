@@ -194,16 +194,6 @@ header nav .nav-sections ul > li > ul > li > ul{
   display: none;
 }
 
-@media (width >= 1024px) {
-  header nav .nav-sections ul > li > ul > li > ul{
-    display: block;
-  }
-
-  header .nav-brand {
-    padding-left: 32px;
-  }
-}
-
 header nav .nav-sections .default-content-wrapper > ul > li > ul {
   display: none;
   position: relative;
@@ -211,6 +201,51 @@ header nav .nav-sections .default-content-wrapper > ul > li > ul {
 
 header nav .nav-sections .default-content-wrapper > ul > li[aria-expanded="true"] > ul {
   display: block;
+}
+
+
+header nav .nav-tools {
+  grid-area: tools;
+  display: flex;
+  align-items: center;
+  background-color: white;
+}
+
+.section-heading,
+header nav .nav-sections .default-content-wrapper > ul > li > a {
+  display: block;
+  padding: 20px 23px;
+  background-color: white;
+  color: #212836;
+  font-weight: 400;
+  border-bottom: 1px solid #0049ab;
+  cursor: pointer;
+}
+
+.top-header {
+    display:none
+}
+
+.nav-drop > ul > li {
+  background-color: white;
+}
+
+.nav-drop > ul > li a {
+  display: block;
+  padding: 20px 23px;
+  color: #0049ab;
+  font-weight: bold;
+  border-bottom: 1px solid #d0d0d0;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+.nav-logo-link {
+  display: flex;
+  height: 64px;
+  background: white;
+  align-items: center;
+  justify-content: center;
 }
 
 @media (width >= 1024px) {
@@ -294,29 +329,14 @@ header nav .nav-sections .default-content-wrapper > ul > li[aria-expanded="true"
     color: currentColor;
   }
 
-}
+  header nav .nav-sections ul > li > ul > li > ul{
+    display: block;
+  }
 
-/* tools */
-header nav .nav-tools {
-  grid-area: tools;
-  display: flex;
-  align-items: center;
-  background-color: white;
-}
+  header .nav-brand {
+    padding-left: 32px;
+  }
 
-/* mobile nav accordion styling */
-
-.section-heading,
-header nav .nav-sections .default-content-wrapper > ul > li > a {
-  display: block;
-  padding: 20px 23px;
-  background-color: white;
-  color: #212836;
-  font-weight: 400;
-  border-bottom: 1px solid #0049ab;
-  cursor: pointer;
-}
-@media (width >= 1024px) {
   .section-heading,
   header nav .nav-sections .default-content-wrapper > ul > li > a {
     padding: unset;
@@ -326,52 +346,23 @@ header nav .nav-sections .default-content-wrapper > ul > li > a {
     border-bottom: none;
     display: inline;
   }
-}
 
-.nav-drop > ul > li {
-  background-color: white;
-}
-
-.nav-drop > ul > li a {
-  display: block;
-  padding: 20px 23px;
-  color: #0049ab;
-  font-weight: bold;
-  border-bottom: 1px solid #d0d0d0;
-  text-transform: uppercase;
-  font-size: 1rem;
-}
-@media (width >= 1024px) {
   .nav-drop > ul > li a {
     display: unset;
     padding: unset;
     font-weight: unset;
     border-bottom: none;
   }
-}
 
-.nav-logo-link {
-  display: flex;
-  height: 64px;
-  background: white;
-  align-items: center;
-  justify-content: center;
-}
-
-@media (width >= 1024px) {
   .nav-logo-link {
     height: auto;
   }
-}
 
-@media only screen and (max-width: 1023px) {
-    .top-header {
-        display:none
-    }
-}
+  .top-header {
+    display:block;
+  }
 
-@media (width >= 1024px) {
-  .nav-drop > ul > li {
+    .nav-drop > ul > li {
     background-color: none;
   }
 
@@ -524,5 +515,26 @@ header nav .nav-sections .default-content-wrapper > ul > li > a {
 
   header .login-button__auth-login {
     cursor: pointer;
+  }
+
+}
+
+
+
+@media (width >= 1571px) {
+  header .nav-brand {
+    padding-left: 0;
+  }
+
+  header nav[aria-expanded="true"] {
+    padding:0;
+  }
+
+  header .top-header__myanalog-section {
+    padding-right: 0;
+  }
+
+  header nav .nav-tools {
+    padding-right: 0;
   }
 }
