@@ -111,7 +111,7 @@ main .hero-container {
 
 @media (width >= 1400px) {
   main .hero-container .hero > div {
-    padding-left: 160px;
+    padding: 0 88px;
   }
 
   main .hero-container .hero > div > div {

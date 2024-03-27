@@ -200,7 +200,7 @@ main .section {
 
 @media (width >= 900px) {
   .section > div {
-    max-width: 1200px;
+    max-width: 1360px;
     margin: auto;
   }
 }
