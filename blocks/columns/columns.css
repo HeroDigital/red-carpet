@@ -116,3 +116,108 @@ main .section.highlight {
     margin: 0 0 32px 0;
   }
 }
+
+/* Column Featured Section */
+
+main .section.featured .columns-wrapper .columns  {
+  > div {
+    gap: 24px;
+
+    > div {
+      align-items: flex-start;
+      background: #fff;
+      border: 1px solid #e0e1e6;
+      border-radius: 4px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      height: 100%;
+      padding: 16px;
+      width: auto;
+
+      p, h3 {
+        margin: 0;
+      }
+
+      h3 {
+        font-family: Barlow;
+        font-size: 1.5rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 2rem;
+        color: #101820;
+        padding-bottom: 8px;
+      }
+
+      p {
+        font-family: Inter;
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 400;
+        letter-spacing: .1px;
+        line-height: 1.625rem;
+        color: #212836;
+      }
+      p.button-container {
+        height: 100%;
+        align-items: center;
+        display: flex;
+        gap: 24px;
+        justify-content: flex-start;
+        width: 100%;
+
+        a {
+          margin: 0;
+          background: transparent;
+          border: 1px solid #0067b9;
+          border-radius: 4px;
+          padding: 8px;
+          text-align: center;
+          text-decoration: none;
+          color: #0067b9;
+          font-family: Inter;
+          font-size: .875rem;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 1.25rem;
+        }
+      }
+    }
+  }
+
+}
+
+main .section.featured .default-content-wrapper {
+  h2 {
+    color: #212836;
+    font-family: Barlow;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 2.5rem;
+    margin-top: 0;
+    margin-bottom: 24px;
+  }
+
+  p {
+    font-family: Inter;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: .1px;
+    line-height: 1.625rem;
+    color: #212836;
+    margin-top: 0px;
+    margin-bottom: 32px;
+  }
+}
+
+main .section.featured {
+  padding: 48px 16px 96px;
+}
+
+@media (width >= 992px) {
+  main .section.featured {
+    padding: 48px 56px 104px;
+  }
+}

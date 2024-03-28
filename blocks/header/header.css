@@ -519,9 +519,7 @@ header nav .nav-sections .default-content-wrapper > ul > li > a {
 
 }
 
-
-
-@media (width >= 1571px) {
+@media (width >= 1400px) {
   header .nav-brand {
     padding-left: 0;
   }
