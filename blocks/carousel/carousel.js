@@ -92,7 +92,6 @@ function createSlide(row, slideIndex, carouselId) {
   if (labeledBy) {
     slide.setAttribute("aria-labelledby", labeledBy.getAttribute("id"));
   }
-
   return slide;
 }
 
