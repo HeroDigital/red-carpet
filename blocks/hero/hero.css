@@ -45,7 +45,7 @@ main .hero-container {
   display: flex;
   gap: 8px;
   justify-content: center;
-  padding: 8px;
+  padding: 1px;
   text-decoration: none;
   font-family: Inter;
   font-size: .875rem;
