@@ -59,6 +59,7 @@ footer .default-content-wrapper {
   footer .default-content-wrapper {
     max-width: 1360px;
     margin: auto;
+    border-top: none;
 
     p {
       flex-direction: row;
