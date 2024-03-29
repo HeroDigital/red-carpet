@@ -380,5 +380,9 @@ main .section.featured {
         grid-area: 2 / 3 / 3 / 5;
       }
     }
+
+    .columns > div > div {
+      margin-top: 0;
+    }
   }
 }
